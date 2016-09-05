@@ -31,5 +31,9 @@ public class MenuController {
     public Object querymenuList(HttpServletRequest request) throws Exception{
         List<Menu> menuList = menuService.getAllMenuList();
         return menuList;
+
+
+
+
     }
 }

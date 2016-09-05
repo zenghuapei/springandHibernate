@@ -1,4 +1,4 @@
-package com.perry.test;
+package com.perry.thread;
 
 import java.util.Date;
 

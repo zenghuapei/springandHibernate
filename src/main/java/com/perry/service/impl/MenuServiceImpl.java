@@ -1,10 +1,10 @@
 package com.perry.service.impl;
 
+import com.perry.annotation.Log;
 import com.perry.dao.MenuDao;
 import com.perry.entity.Menu;
 import com.perry.service.MenuService;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -13,7 +13,6 @@ import java.util.List;
  * Created by zenghuapei on 2016/8/29.
  */
 @Service("menuService")
-@Transactional
 public class MenuServiceImpl implements MenuService {
     @Resource(name = "menuDao")
     private MenuDao menuDao;
@@ -31,6 +30,7 @@ public class MenuServiceImpl implements MenuService {
      * @return 返回值
      * @throws Exception
      */
+    @Log
     public void addMenu(Menu menu){
         menuDao.addMenu(menu);
     }

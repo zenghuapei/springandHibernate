@@ -43,7 +43,8 @@
     <filter-name>CharacterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <!-- open session filter -->
+  <!-- open session filter这里每加的话可能使用getCurrentSession()会报错使用openSession()则不会报错
+  使用openSession()需要手动关闭session-->
   <filter>
     <filter-name>openSessionInViewFilter</filter-name>
     <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>

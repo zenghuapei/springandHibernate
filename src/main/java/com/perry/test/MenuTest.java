@@ -1,5 +1,6 @@
 package com.perry.test;
 
+import com.perry.annotation.Log;
 import com.perry.dao.MenuDao;
 import com.perry.entity.Menu;
 import com.perry.service.MenuService;
